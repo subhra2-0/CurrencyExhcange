@@ -1,0 +1,176 @@
+
+  label {
+    width: 30%;
+    text-align: center;
+  }
+  select, input {
+    padding: 8px;
+    margin-left: 5px;
+    margin-right: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .placeorder-container, form
+  {
+    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+  }
+
+  .myOrderContainer
+  {
+  
+    display:flex;
+    position: relative;
+    flex-direction:column;
+    font-size: 12px;
+    align-items:center;
+    width:100%;
+    justify-content:center;
+    height: 100%;
+  }
+  
+  .mycontainer{
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    width:70%;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 12px -4px #333;
+    
+  }
+
+  .myOrderContainer-top
+  {
+    
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    
+  }
+  .myOrderContainer-top h2
+  {
+    margin-bottom:5px;
+  }
+  .myOrderContainer-middle
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: Center;
+    align-items: center;
+    width: 100%;
+    overflow-x: auto;
+  }
+  
+  .myOrderbutton-container
+  {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 1%;
+  }
+
+ 
+  .col1, .col2, .col3
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+ .col1 select, .col2 select, .col3 input
+  {
+    width: 70%;
+  }
+  .myOrderbutton-container button
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .bi
+  {
+    margin-right:5px;
+  }
+  .ref-block, .help-block
+  {
+      display: flex;
+      margin-top:-10px;
+      font-size: 10px;
+      padding-right:15px;
+     width: 100%;
+      font-weight: bold;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+      color:green;
+  }
+ 
+  .rate-block
+  {
+    display: flex;
+      margin-top:-10px;
+      font-size: 10px;
+      padding-right:15px;
+      width:100%;
+      height: 10%;
+      font-weight: bold;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+      color:green;
+  }
+ 
+  .btn
+  {
+    font-size: small;
+  }
+  .account-listHeader
+{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.bi-cash-coin
+{
+  margin-right: 0px !important;
+  color:green;
+  vertical-align: middle;
+}
+.rate-block p
+{
+  margin:0px !important;
+}
+.disclaimer
+{
+    display: flex;
+    font-size: 10px;
+    margin-top: -10px;
+    padding-right: 15px;
+    width: 100%;
+    font-weight: bold;
+    flex-direction: row;
+    color:#333;
+    justify-content: flex-end;
+    align-items: baseline;
+
+}

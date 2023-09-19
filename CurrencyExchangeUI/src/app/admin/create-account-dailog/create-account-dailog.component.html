@@ -1,0 +1,39 @@
+<div class="mydialog">
+  <div class=" mydialogContent">
+<div class="header">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-ruled-fill" viewBox="0 0 16 16">
+  <path d="M12 0H4a2 2 0 0 0-2 2v4h12V2a2 2 0 0 0-2-2zm2 7H6v2h8V7zm0 3H6v2h8v-2zm0 3H6v3h6a2 2 0 0 0 2-2v-1zm-9 3v-3H2v1a2 2 0 0 0 2 2h1zm-3-4h3v-2H2v2zm0-3h3V7H2v2z"/>
+</svg>
+<h2>Create Account</h2>
+</div>
+<form [formGroup]="accountForm" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label for="accHolderName">Name:</label>
+    <input type="text" class="form-control" required  (keyup)="onAccountNameKeyUp()" id="accHolderName" placeholder="Account Holder Name" formControlName="accHolderName">
+</div>
+<span class="help-block"  *ngIf="showNameAlert">Please enter a valid Name</span>
+
+  <div class="form-group">
+    <label for="currencyType">Currency Type:</label>
+    <select class="form-control" id="currencyType" (change)="onCurrencyTypeKeyUp()" formControlName="currencyType">
+      <option [ngValue]="null" [disabled]="true" >Select Currency Type </option>
+      <option *ngFor="let type of currencyType" [value]="type">{{ type }}</option>
+    </select>
+  </div>
+  <span class="help-block"  *ngIf="showCurrencyAlert">Select Currency Type</span>
+
+ 
+
+  <div class="form-group">
+    <label for="balance">Amount:</label>
+    <input type="number" class="form-control" id="balance" (keyup)="onAmountKeyUp()" min="0" placeholder="Amount" formControlName="balance">
+  </div>
+  <span class="help-block"  *ngIf="showAmountAlert">Amount cannot be Negative</span>
+
+  <div class="btnSubmit">
+    <button type="submit" class="btn btn-outline-success" [disabled]="accountForm.invalid">Submit</button>
+    <button type="button" class="btn btn-outline-dark" (click)="onCancelClick()">Cancel</button>
+  </div>
+</form>
+</div>
+</div>

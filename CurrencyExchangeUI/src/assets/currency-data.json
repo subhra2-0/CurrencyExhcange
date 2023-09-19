@@ -1,0 +1,32 @@
+[
+    {
+      "tnxid": 123,
+      "drCurrency": "USD",
+      "crCurrency": "INR",
+      "conversionAmount": 74.5,
+      "conversionDate": "2023-05-24"
+    },
+    {
+      "tnxid": 124,
+      "drCurrency": "INR",
+      "crCurrency": "USD",
+      "conversionAmount": 0.25,
+      "conversionDate": "2023-05-25"
+    },
+    {
+      "tnxid": 125,
+      "drCurrency": "PLN",
+      "crCurrency": "SGD",
+      "conversionAmount": 54.2,
+      "conversionDate": "2023-05-26"
+    },
+    {
+      "tnxid": 126,
+      "drCurrency": "SGD",
+      "crCurrency": "USD",
+      "conversionAmount": 3.8,
+      "conversionDate": "2023-05-27"
+    }
+    
+  ]
+  

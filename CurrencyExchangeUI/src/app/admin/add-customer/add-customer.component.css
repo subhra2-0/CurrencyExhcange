@@ -1,0 +1,152 @@
+.MainContainer
+{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 90%;
+  margin: 0;
+  padding:0;
+}
+.myMainContainer
+{
+  display:flex;
+  position: relative;
+  flex-direction:column;
+  font-size: 12px;
+  align-items:center;
+  width:100%;
+  justify-content:center;
+  height: 100%;
+}
+
+input.ng-invalid.ng-touched
+{
+    border: 1px solid red;
+}
+
+.mymiddlecontainer
+{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   height: 70%;
+   width:50%;
+}
+.MainContainer .mt-5
+{
+    margin:0px !important;
+    border:0px !important;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 12px -4px #333;
+}
+
+.form-group  .alignItems{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    max-width:100%;
+    overflow-x: auto;
+}
+.form-group input, select,option
+{
+    width: 65%;
+    font-size: 11px;   
+}
+.form-group input:focus,select:focus,option:focus,button:focus
+{
+        box-shadow: none !important;
+}
+.form-group label
+{
+    width: 35%;
+    font-size: 11px;
+}
+.help-block
+{
+    display: flex;
+    margin-top:-3px;
+    margin-right:5px;
+    font-size: 10px;
+    font-weight: bold;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-end;
+}
+
+.alertWrapper
+{
+    position: absolute;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    z-index: -1;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: -5%;
+}
+.alert
+{
+    margin:0px;
+    Padding:5px;
+}
+.headerAlign
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 5px;
+    justify-content: center;
+    align-items: center;
+}
+h2
+{
+    padding-left:5px;
+    margin-bottom:0px;
+}
+.alert {
+    opacity: 0;
+    position:absolute;
+    transition: opacity 0.5s ease-in-out !important;
+  }
+  
+  .alert.show {
+    opacity: 1;
+    position:absolute;
+  }
+
+  .alertmessage
+{
+  padding-left:5px;
+  vertical-align: middle;
+}
+  
+  
+  .btn-outline-dark 
+  {
+    margin-right: 10px;
+  }
+
+  .mybtn .btn
+  {
+    font-size: small;
+  }
+
+.btn-plchldr
+{
+  padding-left:2px;
+}
+.mybtn svg,.mybtn img
+{
+    margin-top: -2px;
+}

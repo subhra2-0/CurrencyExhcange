@@ -1,0 +1,66 @@
+.mydialog
+{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.mydialogContent
+{
+    padding: 15px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header
+{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+h2
+{
+    padding-left: 5px;
+    margin-bottom:0px;
+}
+.bi-trash3-fill
+{
+    color:red;
+    margin-top: -4px;
+}
+
+.subhead
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.subhead p
+{
+    margin:10px;
+    text-align: center;
+}
+
+
+    .btnSubmit
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.btnSubmit button
+{
+    margin-top:5px;
+    padding:5px 20px 5px;
+    border-radius: 5px;
+}
+

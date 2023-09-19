@@ -1,0 +1,95 @@
+<div class = "MainContainer">
+  <div class = "myMainContainer">
+    <div class = "sliding-img">
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+      </symbol>
+      </svg>
+    <div class="alertWrapper">
+      <div class="alert alert-success d-flex align-items-center" role="alert" [class.show]="showSuccessAlert">
+        <svg class="bi flex-shrink-0 me-2" width="16" height="16" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+        {{alertMessage}}
+      </div>
+      <div class="alert alert-danger d-flex align-items-center" role="alert" [class.show]="showErrorAlert">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-triangle-fill" viewBox="0 0 16 16">
+          <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+        </svg>
+        <span class ="alertmessage">{{alertMessage}}</span>
+      </div>
+    </div>
+<div class="mymiddlecontainer"> 
+<div class="account-list">
+  <div class="account-listHeader">
+    <button class ="btn btn-outline-dark" routerLink="/allcustomers">
+      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+      </svg>
+      <span class="btn-plchldr">Customers</span>
+    </button> 
+     
+    <span class = "tabletitle">
+    <h2 class="page-title title--font-size font--roboto-bold text-center">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" fill="currentColor" class="bi bi-list-columns-reverse" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M0 .5A.5.5 0 0 1 .5 0h2a.5.5 0 0 1 0 1h-2A.5.5 0 0 1 0 .5Zm4 0a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1h-10A.5.5 0 0 1 4 .5Zm-4 2A.5.5 0 0 1 .5 2h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm4 0a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5Zm-4 2A.5.5 0 0 1 .5 4h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm4 0a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5Zm-4 2A.5.5 0 0 1 .5 6h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm4 0a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 0 1h-8a.5.5 0 0 1-.5-.5Zm-4 2A.5.5 0 0 1 .5 8h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm4 0a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 0 1h-8a.5.5 0 0 1-.5-.5Zm-4 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm4 0a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1h-10a.5.5 0 0 1-.5-.5Zm-4 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm4 0a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5Zm-4 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm4 0a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5Z"/>
+      </svg>
+      Accounts</h2>
+    </span>
+  <div class="btnWrapper">
+    <button class ="btn btn-success" (click)="openCreateAccountDialog(id)">
+      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-file-ruled-fill" viewBox="0 0 16 16">
+        <path d="M12 0H4a2 2 0 0 0-2 2v4h12V2a2 2 0 0 0-2-2zm2 7H6v2h8V7zm0 3H6v2h8v-2zm0 3H6v3h6a2 2 0 0 0 2-2v-1zm-9 3v-3H2v1a2 2 0 0 0 2 2h1zm-3-4h3v-2H2v2zm0-3h3V7H2v2z"/>
+      </svg>
+      <span class="btn-plchldr">Create Account</span></button> 
+  </div>
+</div>
+<div class="loader-overlay" *ngIf="loaderservice.isLoading$ | async">
+  <div class="loader"></div>
+</div>
+<div class="table-container">
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Account Number</th>
+      <th scope="col">Balance</th>
+      <th scope="col">Currency Type</th>
+      <th scope="col">Account Creation Date</th>
+      <th scope="col">Account Holder Name</th>
+      <th scope="col">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <ng-container *ngIf="accounts.length === 0; else accountRecords">
+      <tr>
+        <td colspan="6" style="color:darkgray; font-weight: bold;">No records found</td>
+      </tr>
+    </ng-container>
+    <ng-template #accountRecords>
+    <tr *ngFor="let account of accounts">
+      <td>{{ account.accountNumber }}</td>
+      <td>{{ account.balance }}</td>
+      <td>{{ account.currencyType }}</td>
+      <td>{{ parseDateString(account.accountCreationDate) | date:'medium' }}</td>
+      <td>{{ account.accHolderName }}</td>
+      <td>
+       <div class="btnActions">
+          <button class="btn btn-outline-dark" (click)="openUpdateAccountDialog(id,account.accountNumber)">
+            <i class="fas fa-edit"></i> 
+          </button>
+          <button class="btn btn-outline-danger" (click)="openDeleteConfirmationDialog(id,account.accountNumber)">
+            <i class="fas fa-trash-alt"></i>
+          </button>
+
+        </div>
+      </td>
+    </tr>
+    </ng-template>
+  </tbody>
+</table>
+</div>
+  </div>
+  </div>
+  </div>
+  </div>
+  

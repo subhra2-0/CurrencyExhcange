@@ -1,0 +1,42 @@
+{
+  "customers": [
+    {
+      "id": 1
+    },
+    {
+      "username": "akhil",
+      "email": "akhil@gmail.com",
+      "phone": "989989999",
+      "gender": "Male",
+      "id": 2
+    },
+    {
+      "username": "suppy",
+      "email": "suppy@gmail.com",
+      "phone": "989989999",
+      "gender": "Female",
+      "id": 3
+    },
+    {
+      "username": "veera",
+      "email": "veera@gmail.com",
+      "phone": "700083",
+      "gender": "Female",
+      "id": 4
+    },
+    {
+      "username": "sldfkj",
+      "email": "sadlfj@gmail.com",
+      "phone": "329847",
+      "gender": "Male",
+      "id": 5
+    },
+    {
+      "username": "sladfjk",
+      "email": "subhrasuvam@gmail.com",
+      "phone": "43985",
+      "gender": "Male",
+      "id": 6
+    }
+  ]
+}
